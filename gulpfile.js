@@ -50,7 +50,7 @@ gulp.task('jade', function () {
 });
 //Собираем SCSS
 gulp.task('sass', function () {
-    gulp.src('app/sass/*.scss')
+    gulp.src('app/scss/*.scss')
         .pipe(sass({
             errLogToConsole: true, // показывать ошибки в консоле
             sync: true //для обработки больших файлов
@@ -92,9 +92,9 @@ gulp.task('wiredep', function () {
 gulp.task('watch', function () {
     gulp.watch('app/css/style.css', ['css']);
     gulp.watch('app/js/*.js', ['js']);
-    gulp.watch('app/*.html', ['html']);
+    //gulp.watch('app/*.html', ['html']);
     gulp.watch('app/jade/*.jade', ['jade']);
-    gulp.watch('app/sass/**/_*.scss', ['sass']);
+    gulp.watch('app/scss/**/_*.scss', ['sass']);
     gulp.watch('bower.json', ['wiredep']);
 });
 
