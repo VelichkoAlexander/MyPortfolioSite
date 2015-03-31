@@ -1,0 +1,28 @@
+{
+  "name": "template for mototek.com.ua",
+  "version": "0.0.1",
+  "homepage": "https://bitbucket.org/al4code/template-for-mototek.com.ua",
+  "authors": [
+    "Alexandr Velichko <fessal@Rambler.ru>"
+  ],
+  "description": "template",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+  },
+  "keywords": [
+    "template",
+    "html",
+    "css"
+  ],
+  "license": "MIT",
+  "dependencies": {
+  }
+}
