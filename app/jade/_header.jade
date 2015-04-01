@@ -1,8 +1,18 @@
 //Header
-header.main_head
-   .container
-      .row
-         .logo_container.pull-left
-
-
+header.main_head#home(data-parallax="scroll" data-image-src="/images/header/head_img.jpg")
+    .container
+        .row
+          .head_nav
+                .logo_container.col-md-6
+                    img(src="images/header/avatar.jpg" alt="header__person-photo")
+                    span.header__person-name Alexander Velichko
+                 nav.header__nav.col-md-6.navbar(role="navigation")
+                    ul.menu
+                      -for (var x = 0; x < 3; x++)
+                        li
+                            a(href="#") About
+    .header__intro
+        .header__intro-inner
+            p Front-end разработчик из Украины.
+            p Готовый для фриланса.
 //End header

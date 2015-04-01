@@ -3,32 +3,60 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>alexander velichko</title>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
-  <body>
-    <!--Header-->
-    <header class="main_head">
-      <div class="container">
-        <div class="row">
-          <div class="logo_container pull-left"></div>
-        </div>
-      </div>
-    </header>
-    <!--End header-->
-    <div id="loader">
-      <div id="loaderInner"></div>
-    </div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-    <!--footer-->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <p>© 2015 by Alex</p>
-        </div>
-      </div>
-    </footer>
-    <!--end footer-->
-  </body>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500">
 </html>
+<body>
+  <!--Header-->
+  <header id="home" data-parallax="scroll" data-image-src="/images/header/head_img.jpg" class="main_head">
+    <div class="container">
+      <div class="row">
+        <div class="head_nav">
+          <div class="logo_container col-md-6"><img src="images/header/avatar.jpg" alt="header__person-photo"><span class="header__person-name">Alexander Velichko</span></div>
+          <nav role="navigation" class="header__nav col-md-6 navbar">
+            <ul class="menu">
+              <li><a href="#">About</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="header__intro">
+      <div class="header__intro-inner">
+        <p>Front-end разработчик из Украины.</p>
+        <p>Готовый для фриланса.</p>
+      </div>
+    </div>
+  </header>
+  <!--End header-->
+  <div id="loader">
+    <div id="loaderInner"></div>
+  </div>
+  <section class="section-about">
+    <container>
+      <h1 class="section__title">Обо мне</h1>
+      <div class="about">
+        <p class="about__text"> Мое имя Александр, я front-end разработчик живщий в Мариуполе, Украина.Я специализируюсь в разработке сайтов на Joomla и Wordpress. Также имею скилы системного администратора, Я большой поклонник спорта и здоровой жизни, сильно увлекаюаюсь своей работой.</p>
+      </div>
+    </container>
+  </section>
+  <!--Footer-->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <p>© 2015 by Alex</p>
+      </div>
+    </div>
+  </footer>
+  <!--End footer-->
+  <!--Scripts-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/libs/parallax.min.js"></script>
+  <!--End Scripts-->
+</body>
