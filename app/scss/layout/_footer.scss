@@ -1,0 +1,23 @@
+.footer__note{
+  padding: 0;
+  margin: 0;
+}
+.links{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  float: right;
+  @include clearfix;
+}
+.links__item{
+  display: inline-block;
+  margin-left: 15px;
+  a{
+    font-size: 17px;
+    color:#333;
+    transition: .3s;
+    &:hover{
+      color:#428bca;
+    }
+  }
+}

@@ -1,9 +1,60 @@
 #loader
     #loaderInner
+        i.fa.fa-spinner.fa-pulse.fa-4x
 section.section-about
-    container
+    .container
         h1.section__title Обо мне
         div.about
             p.about__text  Мое имя Александр, я front-end разработчик живщий в Мариуполе, Украина.Я специализируюсь в разработке сайтов на Joomla и Wordpress. Также имею скилы системного администратора, Я большой поклонник спорта и здоровой жизни, сильно увлекаюаюсь своей работой.
+section.section-works
+    .container
+        h1.section__title  Мои последнии работы
+    .container
+        row
+            .controls
+                ul
+                    li.filter.active(data-filter="all") Все работы
+                    li.filter(data-filter=".category_1") Лендинги
+                    li.filter(data-filter=".category_2") Магазины
+            #portfolio_show
+                .mix.col-md-3.col-sm-6.col-xs-12.portfolio__item.category_1
+                    img(src="images/portfolio-img/1.jpg" alt="Alt")
+                    .item__content
+                        h3 Заголовок работы
+                        p Описание работы
+                        a.popup_content(href="#") Посмотреть
+                .mix.col-md-3.col-sm-6.col-xs-12.portfolio__item.category_2
+                    img(src="images/portfolio-img/2.jpg" alt="Alt")
+                    .item__content
+                        h3 Заголовок работы
+                        p Описание работы
+                        a.popup_content(href="#") Посмотреть
+                .mix.col-md-3.col-sm-6.col-xs-12.portfolio__item.category_2
+                    img(src="images/portfolio-img/3.jpg" alt="Alt")
+                    .item__content
+                        h3 Заголовок работы
+                        p Описание работы
+                        a.popup_content(href="#") Посмотреть
+                .mix.col-md-3.col-sm-6.col-xs-12.portfolio__item.category_1
+                    img(src="images/portfolio-img/4.jpg" alt="Alt")
+                    .item__content
+                        h3 Заголовок работы
+                        p Описание работы
+                        a.popup_content(href="#") Посмотреть
+section.section-contacts
+    .container
+        h1.section__title  Контакты
+     .container
+         .row
+             .col-md-6
+                 form.main_form(action="")
+                     label *Ваше имя:
+                     input(type="text" name="name" placeholder="Ваше имя:" data-validation-matches-message=
+                     "Must match email address entered above" required )
+                     span.help-block
+
+                    button send
+
+
 
 

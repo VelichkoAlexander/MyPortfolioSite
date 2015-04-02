@@ -25,11 +25,15 @@ header{
 }
 
 .logo_container {
+  z-index: 20;
   img {
     border-radius: 50%;
     height: 80px;
     max-width: 100%;
     vertical-align: middle;
+    border:3px solid #dae4e6;
+    cursor:pointer;
+
   }
   .header__person-name {
     color: #fff;
@@ -68,38 +72,18 @@ nav{
   }
 
 }
-.section-about{
-
-  padding: 168px 0 175px;
-}
-.header__intro {
-  color: #fff;
-  display: table;
-  line-height: 80px;
-  font-size: 39px;
-  font-weight: 300;
-  height: 100%;
-  left: 0;
-  text-align: center;
-  top: 0;
-  width: 100%;
+.header__scroll {
   position: absolute;
-  z-index: 1;
-  p{
-    margin: 0;
-  }
-  .header__intro-inner {
-    padding: 60px 60px 50px 60px;
-    display: table-cell;
-    vertical-align: middle;
-  }
-
-}
-.section__title {
-  font-size: 38px;
-  line-height: 1.176;
-  margin: 0 0 100px;
-  text-align: center;
+  left: 50%;
+  bottom: 60px;
+  margin-left: -17px;
+  z-index: 20;
+  color: white;
 }
 
+.portfolio__item{
+  img{
+    width: 100%;
+  }
+}
 

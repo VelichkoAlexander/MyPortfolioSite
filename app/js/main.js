@@ -12,7 +12,8 @@
 
         },
         setUpListeners: function () {
-            $(window).resize(this.windowHeight())
+            $(window).resize(this.windowHeight());
+            $('#portfolio_show').mixItUp();
         },
 
         preLoad: function () {

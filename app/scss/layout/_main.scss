@@ -34,7 +34,8 @@ h1,h2{
   z-index: 9999;
 }
 #loaderInner {
-  background: url("../images/preload/preload.gif") center center no-repeat #fff;
+  //background: url("../images/preload/preload.gif") center center no-repeat #fff;
+  color: #000;
   background-size: 100%;
   height: 60px;
   width: 60px;
