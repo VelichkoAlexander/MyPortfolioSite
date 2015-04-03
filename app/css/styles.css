@@ -721,6 +721,8 @@ header {
 
 .main_head {
   background: transparent; }
+  .main_head a:hover, .main_head a:focus {
+    color: white; }
 
 .logo_container {
   z-index: 20; }
