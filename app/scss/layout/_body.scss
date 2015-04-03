@@ -129,12 +129,74 @@ section {
       background-color: transparent;
       text-decoration: none;
       color: #ffffff;
-      transition: .4s;
+      transition: .2s linear;
       &:hover {
         color: #000;
         background-color: #fff;
+        transform: scale(1.07);
       }
     }
   }
 }
+.main_form {
+  max-width: 600px;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 5px;
+  .name_form,
+  .mail_form {
+    margin: 0;
+    padding: 0;
 
+  }
+}
+  .control-group  input, .control-group  textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    //line-height: 40px;
+    //text-indent: 12px;
+    font-size: 16px;
+    background-color: transparent;
+    padding: 11px 11px;
+
+}
+.control-group  textarea{
+  resize: none;
+  min-height: 7em;
+
+}
+
+input[type=submit] {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 22px;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  border: none;
+  color: #fff;
+  background: #262626;
+  cursor: pointer;
+  padding: 15px 40px;
+  border-radius: 3px;
+  transition: all 200ms linear;
+  margin: 25px auto;
+
+  &:hover{
+    transform: scale(1.07);
+  }
+}
+.help-block{
+  ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    li{
+      color: red;
+    }
+  }
+}

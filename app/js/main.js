@@ -14,6 +14,7 @@
         setUpListeners: function () {
             $(window).resize(this.windowHeight());
             $('#portfolio_show').mixItUp();
+            $("input,select,textarea").not("[type=submit]").jqBootstrapValidation();
         },
 
         preLoad: function () {

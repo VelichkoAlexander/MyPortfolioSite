@@ -44,18 +44,25 @@ section.section-works
 section.section-contacts
     .container
         h1.section__title  Контакты
-     .container
-         .row
-             .col-md-6
-                 form.main_form(action="")
-                     label *Ваше имя:
-                     input(type="text" name="name" placeholder="Ваше имя:" data-validation-matches-message=
-                     "Must match email address entered above" required )
-                     span.help-block
+    .container
+        .row
+            .col-md-12
+                form.main_form(novalidate)
+                   .control-group.name_form
+                        label.control-label(for="name") *Ваше имя:
+                        input(type="text" name="name" placeholder="Ваше имя" required data-validation-required-message="Вы не ввели имя" aria-invalid="false")
+                        span.help-block
+                    .control-group.mail_form
+                        label.control-label(for="email") *Ваш E-mail:
+                        input(type="email" name="email" placeholder="Ваш E-mail" required data-validation-required-message="Не корректно введен E-mail" aria-invalid="false")
+                        span.help-block
+                    .control-group
+                         label.control-label(for="message") *Ваше сообщение:
+                         textarea(name="message" placeholder="Ваше сообщение" required data-validation-required-message="Вы не ввели сообщение" aria-required="true" aria-invalid="true" aria-describedby="comment-error")
+                         span.help-block
+                    input.submit(type="submit" name="submit_form" value="Отправить")
 
-                    button send
-//-TODO: сделать отправку сообщений
-    //ssssss
+
 
 
 
