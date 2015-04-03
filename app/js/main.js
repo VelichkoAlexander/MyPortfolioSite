@@ -15,6 +15,7 @@
             $(window).resize(this.windowHeight());
             $('#portfolio_show').mixItUp();
             $("input,select,textarea").not("[type=submit]").jqBootstrapValidation();
+            $(".menu a[href*='#']").mPageScroll2id();
         },
 
         preLoad: function () {
