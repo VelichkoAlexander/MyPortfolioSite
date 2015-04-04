@@ -15,7 +15,10 @@
             $(window).resize(this.windowHeight());
             $('#portfolio_show').mixItUp();
             $("input,select,textarea").not("[type=submit]").jqBootstrapValidation();
-            $(".menu a[href*='#']").mPageScroll2id();
+            $(".menu a[href*='#'],.header__scroll,.up").mPageScroll2id();
+            //animate
+
+            $(".section__title").animated("fadeInUp", "fadeOutDown");
         },
 
         preLoad: function () {
@@ -26,18 +29,8 @@
         },
         windowHeight: function () {
             $(".main_head").css("height", $(window).height());
-        },
-        parallaxEffect: function () {
-            $(".main_head[data-type='background']").each(function () {
-                var $bgObj = $(this);
-                $(window).scroll(function () {
-                    var yPos = ($(window).scrollTop() / $bgObj.data("speed")),
-                        coords = "50%" + yPos + "px";
-                    $bgObj.css("background-position", coords);
-                });
-
-            });
         }
+
     };
     app.initialize();
 }());

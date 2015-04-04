@@ -80,7 +80,7 @@ nav {
 
 }
 
-.header__scroll {
+a.header__scroll {
   position: absolute;
   left: 50%;
   bottom: 60px;
@@ -89,8 +89,10 @@ nav {
   color: white;
   transition: all .3s;
 
+
   &:hover {
     transform: scale(1.5);
+
 
   }
 }

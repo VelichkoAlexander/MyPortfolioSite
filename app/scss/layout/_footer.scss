@@ -21,3 +21,30 @@
     }
   }
 }
+.up{
+  bottom: 35px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #111;
+  text-align: center;
+  line-height: 50;
+  position: fixed;
+  font-size: 34px;
+  border-radius: 50%;
+ i{
+   position: absolute;
+   top: 2px;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   color: #fff;
+ }
+  &:hover {
+    transform: scale(1.07);
+    background-color: #666666;
+
+  }
+
+
+}

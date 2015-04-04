@@ -763,7 +763,7 @@ nav {
     transition: opacity 1s;
     line-height: 80px; }
 
-.header__scroll {
+a.header__scroll {
   position: absolute;
   left: 50%;
   bottom: 60px;
@@ -771,7 +771,7 @@ nav {
   z-index: 20;
   color: white;
   transition: all .3s; }
-  .header__scroll:hover {
+  a.header__scroll:hover {
     transform: scale(1.5); }
 
 .portfolio__item img {
@@ -928,12 +928,15 @@ input[type=submit] {
   input[type=submit]:hover {
     transform: scale(1.07); }
 
-.help-block ul {
-  padding: 0;
-  margin: 0;
-  list-style: none; }
-  .help-block ul li {
-    color: red; }
+.help-block {
+  transition: .5s;
+  font-size: 14px; }
+  .help-block ul {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+    .help-block ul li {
+      color: red; }
 
 .footer__note {
   padding: 0;
@@ -958,3 +961,25 @@ input[type=submit] {
     transition: .3s; }
     .links__item a:hover {
       color: #428bca; }
+
+.up {
+  bottom: 35px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #111;
+  text-align: center;
+  line-height: 50;
+  position: fixed;
+  font-size: 34px;
+  border-radius: 50%; }
+  .up i {
+    position: absolute;
+    top: 2px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff; }
+  .up:hover {
+    transform: scale(1.07);
+    background-color: #666666; }
