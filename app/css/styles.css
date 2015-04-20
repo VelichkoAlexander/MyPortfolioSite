@@ -942,6 +942,30 @@ input[type=submit] {
     .help-block ul li {
       color: red; }
 
+.podrt_descr {
+  background-color: #fff;
+  max-width: 500px;
+  margin: auto; }
+  .podrt_descr p, .podrt_descr h3 {
+    padding: 20px;
+    padding-bottom: 0; }
+  .podrt_descr h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 20px; }
+  .podrt_descr p {
+    margin-top: 0; }
+  .podrt_descr img {
+    width: 100%;
+    margin-top: 20px; }
+
+.mfp-close-btn-in .mfp-close {
+  color: #FFFFFF; }
+
+.modal-box-content {
+  position: relative; }
+
 .footer__note {
   padding: 0;
   margin: 0; }

@@ -4,13 +4,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AV || Portfolio</title>
+  <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 8]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -51,7 +52,10 @@
       <div class="container">
         <h1 class="section__title">Обо мне</h1>
         <div class="about">
-          <p class="about__text"> Мое имя Александр, я front-end разработчик живщий в Украине. Я специализируюсь в разработке сайтов на Joomla и Wordpress. Также имею скилы системного администратора, Я большой поклонник спорта и здоровой жизни, сильно увлекаюаюсь своей работой.</p>
+          <p class="about__text"> Мое имя Александр, я front-end разработчик живщий в Украине. Я специализируюсь в разработке сайтов на Joomla и Wordpress. Также имею скилы системного администратора.</p>
+          <p class="about__text">В работе я использую такие технологии и инструменты: git, js, gulp, jquery, bower, препроцессоры - jade для html и sass для css, есть начальные знания по Angular.js.</p>
+          <p class="about__text">Ближайшие цели: node.js, и углубленно Angular</p>
+          <p class="about__text">Я большой поклонник спорта и здоровой жизни, сильно увлечен своей работой.</p>
         </div>
       </div>
     </section>
@@ -64,33 +68,73 @@
           <div class="controls">
             <ul>
               <li data-filter="all" class="filter active">Все работы</li>
-              <li data-filter=".category_1" class="filter">Лендинги</li>
+              <li data-filter=".category_1" class="filter">Сервисы</li>
               <li data-filter=".category_2" class="filter">Магазины</li>
             </ul>
           </div>
           <div id="portfolio_show">
-            <div class="mix col-md-3 col-sm-6 col-xs-12 portfolio__item category_1"><img src="images/portfolio-img/1.jpg" alt="Alt">
+            <div class="mix col-md-3 col-sm-6 col-xs-12 portfolio__item category_2"><img src="images/portfolio-img/1.jpg" alt="Alt">
               <div class="item__content">
-                <h3>Заголовок работы</h3>
-                <p>Описание работы</p><a href="#" class="popup_content">Посмотреть</a>
+                <h3>ЭпплShop</h3>
+                <p>Верстка онлайн магазина</p><a href="#work_1" class="popup_content">Посмотреть</a>
+              </div>
+              <div class="hidden">
+                <div id="work_1" class="podrt_descr">
+                  <div class="modal-box-content">
+                    <button type="button" title="Закрыть (Esc)" class="mfp-close">×</button>
+                    <h3>ЭпплShop</h3>
+                    <p>Верстка онлайн магазина</p>
+                    <p><a href="http://alexander-velichko.com/secondhomework/" target="_blank">URL проекта</a></p><img src="images/portfolio-img/1b.jpg" alt="Alt">
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="mix col-md-3 col-sm-6 col-xs-12 portfolio__item category_2"><img src="images/portfolio-img/2.jpg" alt="Alt">
+            <div class="mix col-md-3 col-sm-6 col-xs-12 portfolio__item category_1"><img src="images/portfolio-img/2.jpg" alt="Alt">
               <div class="item__content">
-                <h3>Заголовок работы</h3>
-                <p>Описание работы</p><a href="#" class="popup_content">Посмотреть</a>
+                <h3>Cервис генерации вотермарков</h3>
+                <p></p><a href="#work_2" class="popup_content">Посмотреть</a>
+              </div>
+              <div class="hidden">
+                <div id="work_2" class="podrt_descr">
+                  <div class="modal-box-content">
+                    <button type="button" title="Закрыть (Esc)" class="mfp-close">×</button>
+                    <h3>Cервис генерации вотермарков</h3>
+                    <p>Разработать сервис генерации вотермарков, проект разробатывался в команде, я отвечал за js  и  сборку верстки js и php</p>
+                    <p><a href="http://alexander-velichko.com/hw3" target="_blank">URL проекта</a></p><img src="images/portfolio-img/2b.jpg" alt="Alt">
+                  </div>
+                </div>
               </div>
             </div>
             <div class="mix col-md-3 col-sm-6 col-xs-12 portfolio__item category_2"><img src="images/portfolio-img/3.jpg" alt="Alt">
               <div class="item__content">
-                <h3>Заголовок работы</h3>
-                <p>Описание работы</p><a href="#" class="popup_content">Посмотреть</a>
+                <h3>Mototek</h3>
+                <p>Верстка магазина</p><a href="#work_3" class="popup_content">Посмотреть</a>
+              </div>
+              <div class="hidden">
+                <div id="work_3" class="podrt_descr">
+                  <div class="modal-box-content">
+                    <button type="button" title="Закрыть (Esc)" class="mfp-close">×</button>
+                    <h3>Mototek.com.ua</h3>
+                    <p>Верстка онлайн магазина, и натяжка на joomla, легкий кодинг на php. Оптимизация быстродействия.</p>
+                    <p><a href="http://mototek.com.ua" target="_blank">URL проекта</a></p><img src="images/portfolio-img/3b.jpg" alt="Alt">
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="mix col-md-3 col-sm-6 col-xs-12 portfolio__item category_1"><img src="images/portfolio-img/4.jpg" alt="Alt">
+            <div class="mix col-md-3 col-sm-6 col-xs-12 portfolio__item category_2"><img src="images/portfolio-img/4.jpg" alt="Alt">
               <div class="item__content">
-                <h3>Заголовок работы</h3>
-                <p>Описание работы</p><a href="#" class="popup_content">Посмотреть</a>
+                <h3>3000+</h3>
+                <p>Адаптация шаблона</p><a href="#work_4" class="popup_content">Посмотреть</a>
+              </div>
+              <div class="hidden">
+                <div id="work_4" class="podrt_descr">
+                  <div class="modal-box-content">
+                    <button type="button" title="Закрыть (Esc)" class="mfp-close">×</button>
+                    <h3>3000+</h3>
+                    <p>Адаптация шаблона, перенос магазина c joomla1.5 на 2.5, правка багов в верстке, незначительный кодинг на php.</p>
+                    <p><a href="3000.net.ua" target="_blank">URL проекта</a></p><img src="images/portfolio-img/4b.jpg" alt="Alt">
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -132,9 +176,9 @@
           </div>
           <div class="col-lg-6 col-sm-6 col-xs-12">
             <ul class="links">
-              <li class="links__item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li class="links__item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li class="links__item"><a href="#"><i class="fa fa-github"></i></a></li>
+              <li class="links__item"><a href="https://twitter.com/Al4peace"><i class="fa fa-twitter"></i></a></li>
+              <li class="links__item"><a href="https://www.facebook.com/alex.alforpeace"><i class="fa fa-facebook"></i></a></li>
+              <li class="links__item"><a href="https://github.com/alex4code"><i class="fa fa-github"></i></a></li>
             </ul>
           </div>
         </div><a href="#home" class="up"><i class="fa fa-angle-double-up"></i></a>
@@ -149,6 +193,7 @@
     <script src="js/libs/jquery.malihu.PageScroll2id.js"></script>
     <script src="js/libs/waypoints.min.js"></script>
     <script src="js/libs/animate-css.js"></script>
+    <script src="js/libs/jquery.magnific-popup.min.js"></script>
     <script src="js/main.js"></script>
     <!--End Scripts-->
     

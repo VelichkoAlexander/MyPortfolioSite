@@ -13,11 +13,18 @@
 
         },
         setUpListeners: function () {
-            $('form').on('submit', app.submitForm);
             $(window).resize(this.windowHeight());
             $('#portfolio_show').mixItUp();
             $("input,select,textarea").not("[type=submit]").jqBootstrapValidation();
+            $('form').on('submit', app.submitForm);
             $(".menu a[href*='#'],.header__scroll,.up").mPageScroll2id();
+            $(".popup_content").magnificPopup({
+                type: 'inline',
+                midClick: true,
+                showCloseBtn: true
+            });
+
+
             //animate
 
             $(".section__title").animated("fadeInUp", "fadeOutDown");
@@ -32,29 +39,34 @@
         windowHeight: function () {
             $(".main_head").css("height", $(window).height());
         },
-        parallax: function(){
+        parallax: function () {
 
-            var parallaxObj= $("#home");
-            $(window).on('scroll', function(){
-                var parallaxSpeead= parallaxObj.attr("data-speed"),
-                    yPos= -( $(window).scrollTop() / parallaxSpeead),
-                    coords="50%"+yPos+"px";
+            var parallaxObj = $("#home");
+            $(window).on('scroll', function () {
+                var parallaxSpeead = parallaxObj.attr("data-speed"),
+                    yPos = -( $(window).scrollTop() / parallaxSpeead),
+                    coords = "50%" + yPos + "px";
                 parallaxObj.css({
                     "background-position": coords
                 });
             })
         },
-        submitForm:function(e){
+        submitForm: function (e) {
+            $("input,select,textarea").not("[type=submit]").jqBootstrapValidation();
             e.preventDefault();
+            console.log($('.help-block li').length);
+            if (!($('.help-block  li').length)){
+
                 $.ajax({
                     type: "POST",
                     url: "mail.php",
                     data: $(this).serialize()
-                }).done(function() {
+                }).done(function () {
                     $(this).find("input").val("");
                     alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
                     $("#form").trigger("reset");
                 });
+            }
 
 
         }

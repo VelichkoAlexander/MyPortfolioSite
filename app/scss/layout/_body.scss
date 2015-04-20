@@ -202,3 +202,31 @@ input[type=submit] {
     }
   }
 }
+.podrt_descr{
+  background-color: #fff;
+  max-width: 500px;
+  margin: auto;
+  p,h3{
+    padding: 20px;
+    padding-bottom: 0;
+  }
+  h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 20px;
+  }
+  p{
+    margin-top: 0;
+  }
+  img{
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+.mfp-close-btn-in .mfp-close{
+  color:#FFFFFF;
+}
+.modal-box-content{
+  position: relative;
+}
