@@ -99,9 +99,9 @@ gulp.task('watch', function () {
 });
 
 gulp.task('images', function () {
-    return gulp.src('src/assets/images/**/*')
+    return gulp.src('app/images/portfolio-img/*')
         .pipe(cache(imagemin({optimizationLevel: 5, progressive: true, interlaced: true})))
-        .pipe(gulp.dest('built/img/'));
+        .pipe(gulp.dest('app/images1/portfolio-img/'));
 });
 
 //default

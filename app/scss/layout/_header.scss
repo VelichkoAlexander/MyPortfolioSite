@@ -1,6 +1,6 @@
 header {
   position: relative;
-  &:before {
+ &:before {
     display: block;
     content: "";
     width: 100%;
@@ -8,8 +8,10 @@ header {
     position: absolute;
     background-color: rgba(0, 0, 0, .4);
     //z-index: 10;
-
   }
+}
+#home{
+  background: url('../images/header/head_img.jpg') 50% 0 fixed no-repeat;
 }
 
 .head_nav {

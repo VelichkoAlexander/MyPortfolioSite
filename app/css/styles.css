@@ -665,7 +665,8 @@ td, th {
 
 body {
   -webkit-font-smoothing: antialiased;
-  color: #666; }
+  color: #666;
+  min-width: 320px !important; }
 
 body input:focus:required:invalid, body textarea:focus:required:invalid {
   color: red; }
@@ -708,6 +709,9 @@ header {
     height: 100%;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.4); }
+
+#home {
+  background: url('../images/header/head_img.jpg') 50% 0 fixed no-repeat; }
 
 .head_nav {
   margin-top: 20px; }

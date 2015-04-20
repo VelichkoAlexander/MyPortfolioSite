@@ -6,8 +6,9 @@
 
         initialize: function () {
             this.setUpListeners();
-            this.preLoad();
             this.windowHeight();
+            this.preLoad();
+            this.parallax();
 
 
         },
@@ -29,6 +30,18 @@
         },
         windowHeight: function () {
             $(".main_head").css("height", $(window).height());
+        },
+        parallax: function(){
+
+            var parallaxObj= $("#home");
+            $(window).on('scroll', function(){
+                var parallaxSpeead= parallaxObj.attr("data-speed"),
+                    yPos= -( $(window).scrollTop() / parallaxSpeead),
+                    coords="50%"+yPos+"px";
+                parallaxObj.css({
+                    "background-position": coords
+                });
+            })
         }
 
     };

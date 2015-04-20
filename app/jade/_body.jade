@@ -5,7 +5,7 @@ section.section-about#about
     .container
         h1.section__title Обо мне
         div.about
-            p.about__text  Мое имя Александр, я front-end разработчик живщий в Мариуполе, Украина.Я специализируюсь в разработке сайтов на Joomla и Wordpress. Также имею скилы системного администратора, Я большой поклонник спорта и здоровой жизни, сильно увлекаюаюсь своей работой.
+            p.about__text  Мое имя #{user. name}, я front-end разработчик живщий в Украине. Я специализируюсь в разработке сайтов на Joomla и Wordpress. Также имею скилы системного администратора, Я большой поклонник спорта и здоровой жизни, сильно увлекаюаюсь своей работой.
 section.section-works#portfolio
     .container
         h1.section__title  Мои последнии работы
@@ -50,15 +50,15 @@ section.section-contacts#mailMe
                 form.main_form(novalidate)
                    .control-group.name_form
                         label.control-label(for="name") *Ваше имя:
-                        input(type="text" name="name" placeholder="Ваше имя" required data-validation-required-message="Вы не ввели имя" aria-invalid="false")
+                        input#name(type="text" name="name" placeholder="Ваше имя" required data-validation-required-message="Вы не ввели имя" aria-invalid="false")
                         span.help-block
                     .control-group.mail_form
                         label.control-label(for="email") *Ваш E-mail:
-                        input(type="email" name="email" placeholder="Ваш E-mail" required data-validation-required-message="Не корректно введен E-mail" aria-invalid="false")
+                        input#email(type="email" name="email" placeholder="Ваш E-mail" required data-validation-required-message="Не корректно введен E-mail" aria-invalid="false")
                         span.help-block
                     .control-group
                          label.control-label(for="message") *Ваше сообщение:
-                         textarea(name="message" placeholder="Ваше сообщение" required data-validation-required-message="Вы не ввели сообщение" aria-required="true" aria-invalid="true" aria-describedby="comment-error")
+                         textarea#message(name="message" placeholder="Ваше сообщение" required data-validation-required-message="Вы не ввели сообщение" aria-required="true" aria-invalid="true" )
                          span.help-block
                     input.submit(type="submit" name="submit_form" value="Отправить")
 

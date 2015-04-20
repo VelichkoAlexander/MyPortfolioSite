@@ -1,20 +1,15 @@
 //Header
-header.main_head#home(data-parallax="scroll" data-image-src="/images/header/head_img.jpg")
+header.main_head#home( data-speed="2")
     .container
         .row
             .head_nav
                 .logo_container.col-md-6.col-sm-6.col-xs-12
                     img(src="images/header/avatar.png" alt="header__person-photo" )
-                    span.header__person-name Александр Величко
+                    span.header__person-name #{user. name} #{user. sname}
                 nav.header__nav.col-md-6.col-sm-6.col-xs-12.pull-leftnavbar(role="navigation")
                     ul.menu
-                        li
-                            a(href="#about") Обо мне
-                        li
-                            a(href="#portfolio") Портфолио
-                        li
-                            a(href="#mailMe") Написать
-
+                        - each item in menuLink
+                            li: a(href= item.link) #{item.name}
     .header__intro
         .header__intro-inner
             p Front-end разработчик из Украины.
