@@ -13,6 +13,7 @@
 
         },
         setUpListeners: function () {
+            $('form').on('submit', app.submitForm);
             $(window).resize(this.windowHeight());
             $('#portfolio_show').mixItUp();
             $("input,select,textarea").not("[type=submit]").jqBootstrapValidation();
@@ -42,6 +43,20 @@
                     "background-position": coords
                 });
             })
+        },
+        submitForm:function(e){
+            e.preventDefault();
+                $.ajax({
+                    type: "POST",
+                    url: "mail.php",
+                    data: $(this).serialize()
+                }).done(function() {
+                    $(this).find("input").val("");
+                    alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+                    $("#form").trigger("reset");
+                });
+
+
         }
 
     };

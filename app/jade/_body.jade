@@ -47,7 +47,7 @@ section.section-contacts#mailMe
     .container
         .row
             .col-md-12
-                form.main_form(novalidate)
+                form.main_form#form(novalidate)
                    .control-group.name_form
                         label.control-label(for="name") *Ваше имя:
                         input#name(type="text" name="name" placeholder="Ваше имя" required data-validation-required-message="Вы не ввели имя" aria-invalid="false")
