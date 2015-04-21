@@ -674,7 +674,11 @@ body input:focus:required:invalid, body textarea:focus:required:invalid {
 .hidden {
   display: none; }
 
-h1, h2 {
+figure {
+  margin: 0;
+  padding: 0; }
+
+h2 {
   color: #000;
   font-weight: 300; }
 
@@ -738,9 +742,13 @@ header {
     border: 3px solid #dae4e6;
     cursor: pointer; }
   .logo_container .header__person-name {
+    margin: 0;
+    padding: 0;
     color: #fff;
     font-size: 16px;
-    margin-left: 18px; }
+    font-weight: 400;
+    margin-left: 18px;
+    display: inline; }
 
 nav {
   height: 80px;
@@ -780,6 +788,16 @@ a.header__scroll {
 
 .portfolio__item img {
   width: 100%; }
+
+.header__intro-inner h1, .header__intro-inner h2 {
+  margin: 0;
+  line-height: 80px;
+  font-size: 39px;
+  font-weight: 300;
+  color: #FFFFFF; }
+
+h2.outline, .outline {
+  display: none; }
 
 section {
   padding: 108px 0 115px; }

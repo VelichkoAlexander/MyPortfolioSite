@@ -26,8 +26,11 @@
       <div class="container">
         <div class="row">
           <div class="head_nav">
-            <div class="logo_container col-md-6 col-sm-6 col-xs-12"><img src="images/header/avatar.png" alt="header__person-photo"><span class="header__person-name">Александр Величко</span></div>
+            <div class="logo_container col-md-6 col-sm-6 col-xs-12"><img src="images/header/avatar.png" alt="header__person-photo">
+              <h1 class="header__person-name">Александр Величко</h1>
+            </div>
             <nav role="navigation" class="header__nav col-md-6 col-sm-6 col-xs-12 pull-leftnavbar">
+              <h2 class="outline">Навигация</h2>
               <ul class="menu">
                 <li><a href="#about">Обо мне</a></li>
                 <li><a href="#portfolio">Портфолио</a></li>
@@ -39,7 +42,7 @@
       </div>
       <div class="header__intro">
         <div class="header__intro-inner">
-          <p>Front-end разработчик из Украины.</p>
+          <h2>Front-end разработчик из Украины.</h2>
           <p>Готов к удалённой работе.</p>
         </div>
       </div><a href="#about" class="header__scroll"><i class="fa fa-angle-down fa-2x"></i></a>
@@ -50,18 +53,18 @@
     </div>
     <section id="about" class="section-about">
       <div class="container">
-        <h1 class="section__title">Обо мне</h1>
+        <h2 class="section__title">Обо мне</h2>
         <div class="about">
-          <p class="about__text"> Мое имя Александр, я front-end разработчик живщий в Украине. Я специализируюсь в разработке сайтов на Joomla и Wordpress. Также имею скилы системного администратора.</p>
-          <p class="about__text">В работе я использую такие технологии и инструменты: git, js, gulp, jquery, bower, препроцессоры - jade для html и sass для css, есть начальные знания по Angular.js.</p>
-          <p class="about__text">Ближайшие цели: node.js, и углубленно Angular</p>
+          <p class="about__text"> Мое имя Александр, я front-end разработчик, живущий на Украине. Я специализируюсь в разработке сайтов на Joomla и Wordpress. Также имею скилы системного администратора.</p>
+          <p class="about__text">В работе я использую такие технологии и инструменты: git, js, gulp, jquery, bower, препроцессоры — jade для html и sass для css, есть начальные знания по Angular.js.</p>
+          <p class="about__text">Ближайшие цели: node.js, и углубленно Angular.</p>
           <p class="about__text">Я большой поклонник спорта и здоровой жизни, сильно увлечен своей работой.</p>
         </div>
       </div>
     </section>
     <section id="portfolio" class="section-works">
       <div class="container">
-        <h1 class="section__title"> Мои последнии работы</h1>
+        <h2 class="section__title"> Мои последнии работы</h2>
       </div>
       <div class="container">
         <div class="row">
@@ -73,77 +76,84 @@
             </ul>
           </div>
           <div id="portfolio_show">
-            <div class="mix col-md-3 col-sm-6 col-xs-12 portfolio__item category_2"><img src="images/portfolio-img/1.jpg" alt="Alt">
-              <div class="item__content">
+            <figure class="mix col-md-3 col-sm-6 col-xs-12 portfolio__item category_2"><img src="images/portfolio-img/1.jpg" alt="Alt">
+              <figcaption class="item__content">
                 <h3>ЭпплShop</h3>
                 <p>Верстка онлайн магазина</p><a href="#work_1" class="popup_content">Посмотреть</a>
-              </div>
+              </figcaption>
               <div class="hidden">
                 <div id="work_1" class="podrt_descr">
-                  <div class="modal-box-content">
-                    <button type="button" title="Закрыть (Esc)" class="mfp-close">×</button>
-                    <h3>ЭпплShop</h3>
-                    <p>Верстка онлайн магазина</p>
-                    <p><a href="http://alexander-velichko.com/secondhomework/" target="_blank">URL проекта</a></p><img src="images/portfolio-img/1b.jpg" alt="Alt">
-                  </div>
+                  <figure class="modal-box-content">
+                    <button type="button" title="Закрыть (Esc)" class="mfp-close">×
+                      <h3>ЭпплShop</h3>
+                      <p>Верстка онлайн-магазина</p>
+                      <p><a href="http://alexander-velichko.com/secondhomework/" target="_blank">URL проекта</a></p>
+                    </button><img src="images/portfolio-img/1b.jpg" alt="Alt">
+                  </figure>
                 </div>
               </div>
-            </div>
-            <div class="mix col-md-3 col-sm-6 col-xs-12 portfolio__item category_1"><img src="images/portfolio-img/2.jpg" alt="Alt">
-              <div class="item__content">
+            </figure>
+            <figure class="mix col-md-3 col-sm-6 col-xs-12 portfolio__item category_1"><img src="images/portfolio-img/2.jpg" alt="Alt">
+              <figcaption class="item__content">
                 <h3>Cервис генерации вотермарков</h3>
                 <p></p><a href="#work_2" class="popup_content">Посмотреть</a>
-              </div>
+              </figcaption>
               <div class="hidden">
                 <div id="work_2" class="podrt_descr">
-                  <div class="modal-box-content">
+                  <figure class="modal-box-content">
                     <button type="button" title="Закрыть (Esc)" class="mfp-close">×</button>
-                    <h3>Cервис генерации вотермарков</h3>
-                    <p>Разработать сервис генерации вотермарков, проект разробатывался в команде, я отвечал за js  и  сборку верстки js и php</p>
-                    <p><a href="http://alexander-velichko.com/hw3" target="_blank">URL проекта</a></p><img src="images/portfolio-img/2b.jpg" alt="Alt">
-                  </div>
+                    <figcaption>
+                      <h3>Cервис генерации вотермарков</h3>
+                      <p>Разработать сервис генерации вотермарков, проект разробатывался в команде, я отвечал за js  и  сборку верстки js и php</p>
+                      <p><a href="http://alexander-velichko.com/hw3" target="_blank">URL проекта</a></p>
+                    </figcaption><img src="images/portfolio-img/2b.jpg" alt="Alt">
+                  </figure>
                 </div>
               </div>
-            </div>
-            <div class="mix col-md-3 col-sm-6 col-xs-12 portfolio__item category_2"><img src="images/portfolio-img/3.jpg" alt="Alt">
-              <div class="item__content">
+            </figure>
+            <figure class="mix col-md-3 col-sm-6 col-xs-12 portfolio__item category_2"><img src="images/portfolio-img/3.jpg" alt="Alt">
+              <figcaption class="item__content">
                 <h3>Mototek</h3>
                 <p>Верстка магазина</p><a href="#work_3" class="popup_content">Посмотреть</a>
-              </div>
+              </figcaption>
               <div class="hidden">
                 <div id="work_3" class="podrt_descr">
-                  <div class="modal-box-content">
+                  <figure class="modal-box-content">
                     <button type="button" title="Закрыть (Esc)" class="mfp-close">×</button>
-                    <h3>Mototek.com.ua</h3>
-                    <p>Верстка онлайн магазина, и натяжка на joomla, легкий кодинг на php. Оптимизация быстродействия.</p>
-                    <p><a href="http://mototek.com.ua" target="_blank">URL проекта</a></p><img src="images/portfolio-img/3b.jpg" alt="Alt">
-                  </div>
+                    <figcaption>
+                      <h3>Mototek.com.ua</h3>
+                      <p>Верстка онлайн-магазина, и натяжка на joomla, легкий кодинг на php. Оптимизация быстродействия.</p>
+                      <p><a href="http://mototek.com.ua" target="_blank">URL проекта</a></p>
+                    </figcaption><img src="images/portfolio-img/3b.jpg" alt="Alt">
+                  </figure>
                 </div>
               </div>
-            </div>
-            <div class="mix col-md-3 col-sm-6 col-xs-12 portfolio__item category_2"><img src="images/portfolio-img/4.jpg" alt="Alt">
-              <div class="item__content">
+            </figure>
+            <figure class="mix col-md-3 col-sm-6 col-xs-12 portfolio__item category_2"><img src="images/portfolio-img/4.jpg" alt="Alt">
+              <figcaption class="item__content">
                 <h3>3000+</h3>
                 <p>Адаптация шаблона</p><a href="#work_4" class="popup_content">Посмотреть</a>
-              </div>
+              </figcaption>
               <div class="hidden">
                 <div id="work_4" class="podrt_descr">
-                  <div class="modal-box-content">
+                  <figure class="modal-box-content">
                     <button type="button" title="Закрыть (Esc)" class="mfp-close">×</button>
-                    <h3>3000+</h3>
-                    <p>Адаптация шаблона, перенос магазина c joomla1.5 на 2.5, правка багов в верстке, незначительный кодинг на php.</p>
-                    <p><a href="3000.net.ua" target="_blank">URL проекта</a></p><img src="images/portfolio-img/4b.jpg" alt="Alt">
-                  </div>
+                    <figcaption>
+                      <h3>3000+</h3>
+                      <p>Адаптация шаблона, перенос магазина c joomla1.5 на 2.5, правка багов в верстке, незначительный кодинг на php.</p>
+                      <p><a href="3000.net.ua" target="_blank">URL проекта</a></p>
+                    </figcaption><img src="images/portfolio-img/4b.jpg" alt="Alt">
+                  </figure>
                 </div>
               </div>
-            </div>
+            </figure>
           </div>
         </div>
       </div>
     </section>
     <section id="mailMe" class="section-contacts">
       <div class="container">
-        <h1 class="section__title"> Связаться со мной</h1>
+        <h2 class="section__title"> Связаться со мной</h2>
       </div>
       <div class="container">
         <div class="row">

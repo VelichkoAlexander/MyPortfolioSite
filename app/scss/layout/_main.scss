@@ -16,7 +16,11 @@ body textarea:focus:required:invalid{
 .hidden{
   display: none
 }
-h1,h2{
+figure{
+  margin: 0;
+  padding: 0;
+}
+h2{
   color: #000;
   font-weight: 300;
 }

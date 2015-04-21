@@ -5,14 +5,15 @@ header.main_head#home( data-speed="2")
             .head_nav
                 .logo_container.col-md-6.col-sm-6.col-xs-12
                     img(src="images/header/avatar.png" alt="header__person-photo" )
-                    span.header__person-name #{user. name} #{user. sname}
+                    h1.header__person-name #{user. name} #{user. sname}
                 nav.header__nav.col-md-6.col-sm-6.col-xs-12.pull-leftnavbar(role="navigation")
+                    h2.outline Навигация
                     ul.menu
                         - each item in menuLink
                             li: a(href= item.link) #{item.name}
     .header__intro
         .header__intro-inner
-            p Front-end разработчик из Украины.
+            h2 Front-end разработчик из Украины.
             p Готов к удалённой работе.
     a(href="#about").header__scroll
         i.fa.fa-angle-down.fa-2x

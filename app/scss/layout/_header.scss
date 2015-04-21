@@ -43,10 +43,14 @@ header {
 
   }
   .header__person-name {
+    margin: 0;
+    padding: 0;
     color: #fff;
     font-size: 16px;
-    //font-weight: 400;
+    font-weight: 400;
     margin-left: 18px;
+    display: inline;
+
   }
 }
 
@@ -105,3 +109,15 @@ a.header__scroll {
   }
 }
 
+.header__intro-inner{
+  h1,h2{
+    margin: 0;
+    line-height: 80px;
+    font-size: 39px;
+    font-weight: 300;
+    color: #FFFFFF;
+  }
+}
+h2.outline, .outline {
+  display: none;
+}
