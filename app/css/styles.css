@@ -779,7 +779,7 @@ a.header__scroll {
   position: absolute;
   left: 50%;
   bottom: 60px;
-  margin-left: -17px;
+  margin-left: -5px;
   z-index: 20;
   color: white;
   transition: all .3s; }
@@ -1029,3 +1029,10 @@ input[type=submit] {
   .up:hover {
     transform: scale(1.07);
     background-color: #666666; }
+
+@media (max-width: 767px) {
+  .header__intro-inner h2, .header__intro-inner p {
+    line-height: 45px;
+    font-size: 25px; }
+  .header__intro .header__intro-inner {
+    padding: 115px 60px 50px 60px; } }

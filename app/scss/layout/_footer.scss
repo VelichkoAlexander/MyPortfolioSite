@@ -48,3 +48,15 @@
 
 
 }
+
+@media(max-width:767px){
+  .header__intro-inner h2, .header__intro-inner p {
+
+    line-height: 45px;
+    font-size: 25px;
+  }
+  .header__intro .header__intro-inner{
+
+    padding: 115px 60px 50px 60px;
+  }
+}
