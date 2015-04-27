@@ -1018,7 +1018,8 @@ input[type=submit] {
   line-height: 50;
   position: fixed;
   font-size: 34px;
-  border-radius: 50%; }
+  border-radius: 50%;
+  opacity: 0; }
   .up i {
     position: absolute;
     top: 2px;

@@ -23,8 +23,15 @@
                 midClick: true,
                 showCloseBtn: true
             });
+            $('#about').waypoint(function (direction) {
+                if(direction == 'up'){
 
-
+                    $('.up').css({'opacity': '0'}).fadeOut('350');
+                }
+                else{
+                    $('.up').css({'opacity': '1'}).fadeIn('350');
+                }
+            },{offset: '93%'});
             //animate
 
             $(".section__title").animated("fadeInUp", "fadeOutDown");
@@ -55,7 +62,7 @@
             $("input,select,textarea").not("[type=submit]").jqBootstrapValidation();
             e.preventDefault();
             console.log($('.help-block li').length);
-            if (!($('.help-block  li').length)){
+            if (!($('.help-block  li').length)) {
 
                 $.ajax({
                     type: "POST",
