@@ -26,10 +26,10 @@
             $('#about').waypoint(function (direction) {
                 if(direction == 'up'){
 
-                    $('.up').css({'opacity': '0'}).fadeOut('350');
+                    $('.up').css({'opacity': '0'}).fadeOut('slow');
                 }
                 else{
-                    $('.up').css({'opacity': '1'}).fadeIn('350');
+                    $('.up').css({'opacity': '1'}).fadeIn('slow');
                 }
             },{offset: '93%'});
             //animate
