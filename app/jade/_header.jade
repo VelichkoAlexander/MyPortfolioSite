@@ -1,20 +1,32 @@
 //Header
 header.main_head#home( data-speed="2")
-    .container
-        .row
-            .head_nav
-                .logo_container.col-md-6.col-sm-12.col-xs-12
-                    img(src="images/header/avatar.png" alt="header__person-photo" )
-                    h1.header__person-name #{user. name} #{user. sname}
-                nav.header__nav.col-md-6.col-sm-12.col-xs-12.pull-leftnavbar(role="navigation")
-                    h2.outline Навигация
-                    ul.menu
-                        - each item in menuLink
-                            li: a(href= item.link) #{item.name}
-    .header__intro
-        .header__intro-inner
-            h2 Front-end разработчик из Украины.
-            p Готов к удалённой работе.
-    a(href="#about").header__scroll
-        i.fa.fa-angle-down.fa-2x
+
+		nav.navbar.navbar-default(role='navigation')
+			.container
+				// LOGO
+				a.navbar-brand.logo_container(href='#')
+					img(src="images/header/avatar.png" alt="header__person-photo")
+					h1.header__person-name #{user.name} #{user.sname}
+				// MOBILE MENU
+				.navbar-header
+					button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+				// DESKTOP MENU
+				#bs-example-navbar-collapse-1.collapse.navbar-collapse
+					ul.nav.navbar-nav.navbar-right.menu
+						- each item in menuLink
+							li: a(href= item.link) #{item.name}
+				// /.navbar-collapse
+	.header__intro
+		.header__intro-inner
+			h2.animated.fadeInDown Front-end разработчик.
+			p.animated.fadeInUp Готов к удалённой работе.
+
+	a(href="#about").header__scroll
+		i.fa.fa-angle-down.fa-2x
+#bgndVideo.player(data-property="{videoURL:'https://youtu.be/921Puvb0x6Q', containment:'header',	autoPlay:true,	mute:true, startAt:0, opacity:1, showControls : false}")
 //End header
+
+

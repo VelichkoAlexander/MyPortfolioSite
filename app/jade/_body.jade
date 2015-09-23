@@ -1,109 +1,109 @@
 #loader
-    #loaderInner
-        i.fa.fa-spinner.fa-pulse.fa-4x
+	#loaderInner
+		i.fa.fa-spinner.fa-pulse.fa-4x
 section.section-about#about
-    .container
-        h2.section__title Обо мне
-        div.about
-            p.about__text  Мое имя #{user. name}, я front-end разработчик, живущий на Украине. Я специализируюсь в разработке сайтов на Joomla и Wordpress. Также имею скилы системного администратора.
-            p.about__text В работе я использую такие технологии и инструменты: git, js, gulp, jquery, bower, препроцессоры — jade для html и sass для css, есть начальные знания по Angular.js.
-            p.about__text Ближайшие цели: node.js, и углубленно Angular.
-            p.about__text Я большой поклонник спорта и здоровой жизни, сильно увлечен своей работой.
+	.container
+		h2.section__title Обо мне
+		div.about
+			p.about__text  Мое имя #{user.name}, я front-end разработчик, живущий на Украине. Я специализируюсь в разработке сайтов на Joomla и Wordpress. Также имею скилы системного администратора.
+			p.about__text В работе я использую такие технологии и инструменты: git, js, gulp, jquery, bower, препроцессоры — jade для html и sass для css, есть начальные знания по Angular.js.
+			p.about__text Ближайшие цели: node.js, и углубленно Angular.
+			p.about__text Я большой поклонник спорта и здоровой жизни, сильно увлечен своей работой.
 section.section-works#portfolio
-    .container
-        h2.section__title  Мои последнии работы
-    .container
-        .row
-            .controls
-                ul
-                    li.filter.active(data-filter="all") Все работы
-                    li.filter(data-filter=".category_1") Сервисы
-                    li.filter(data-filter=".category_2") Магазины
-            #portfolio_show
-                figure.mix.col-md-3.col-sm-6.col-xs-12.portfolio__item.category_2
-                    img(src="images/portfolio-img/1.jpg" alt="Alt")
-                    figcaption.item__content
-                        h3 ЭпплShop
-                        p Верстка онлайн магазина
-                        a.popup_content(href="#work_1") Посмотреть
-                    .hidden
-                            .podrt_descr#work_1
-                                figure.modal-box-content
-                                    button.mfp-close(type="button" title="Закрыть (Esc)") ×
+	.container
+		h2.section__title  Мои последнии работы
+	.container
+		.row
+			.controls
+				ul
+					li.filter.active(data-filter="all") Все работы
+					li.filter(data-filter=".category_1") Сервисы
+					li.filter(data-filter=".category_2") Магазины
+			#portfolio_show
+				figure.mix.col-md-3.col-sm-6.col-xs-12.portfolio__item.category_2
+					img(src="images/portfolio-img/1.jpg" alt="Alt")
+					figcaption.item__content
+						h3 ЭпплShop
+						p Верстка онлайн магазина
+						a.popup_content(href="#work_1") Посмотреть
+					.hidden
+						.podrt_descr#work_1
+							figure.modal-box-content
+								button.mfp-close(type="button" title="Закрыть (Esc)") ×
 
-                                        h3 ЭпплShop
-                                        p Верстка онлайн-магазина
-                                        p
-                                            a(href="http://alexander-velichko.com/secondhomework" target="_blank") URL проекта
-                                    img(src="images/portfolio-img/1b.jpg" alt="Alt")
-                figure.mix.col-md-3.col-sm-6.col-xs-12.portfolio__item.category_1
-                    img(src="images/portfolio-img/2.jpg" alt="Alt")
-                    figcaption.item__content
-                        h3 Cервис генерации вотермарков
-                        p
-                        a.popup_content(href="#work_2") Посмотреть
-                    .hidden
-                        .podrt_descr#work_2
-                            figure.modal-box-content
-                                button.mfp-close(type="button" title="Закрыть (Esc)") ×
-                                figcaption
-                                    h3 Cервис генерации вотермарков
-                                    p Разработать сервис генерации вотермарков, проект разробатывался в команде, я отвечал за js  и  сборку верстки js и php
-                                    p
-                                        a(href="http://alexander-velichko.com/hw3" target="_blank") URL проекта
-                                img(src="images/portfolio-img/2b.jpg" alt="Alt")
-                figure.mix.col-md-3.col-sm-6.col-xs-12.portfolio__item.category_2
-                    img(src="images/portfolio-img/3.jpg" alt="Alt")
-                    figcaption.item__content
-                        h3 Mototek
-                        p Верстка магазина
-                        a.popup_content(href="#work_3") Посмотреть
-                    .hidden
-                        .podrt_descr#work_3
-                            figure.modal-box-content
-                                button.mfp-close(type="button" title="Закрыть (Esc)") ×
-                                figcaption
-                                    h3 Mototek.com.ua
-                                    p Верстка онлайн-магазина, и натяжка на joomla, легкий кодинг на php. Оптимизация быстродействия.
-                                    p
-                                        a(href="http://mototek.com.ua" target="_blank") URL проекта
-                                img(src="images/portfolio-img/3b.jpg" alt="Alt")
-                figure.mix.col-md-3.col-sm-6.col-xs-12.portfolio__item.category_2
-                    img(src="images/portfolio-img/4.jpg" alt="Alt")
-                    figcaption.item__content
-                        h3 3000+
-                        p Адаптация шаблона
-                        a.popup_content(href="#work_4") Посмотреть
-                    .hidden
-                        .podrt_descr#work_4
-                            figure.modal-box-content
-                                button.mfp-close(type="button" title="Закрыть (Esc)") ×
-                                figcaption
-                                    h3 3000+
-                                    p Адаптация шаблона, перенос магазина c joomla1.5 на 2.5, правка багов в верстке, незначительный кодинг на php.
-                                    p
-                                        a(href="3000.net.ua" target="_blank") URL проекта
-                                img(src="images/portfolio-img/4b.jpg" alt="Alt")
+									h3 ЭпплShop
+									p Верстка онлайн-магазина
+									p
+										a(href="http://alexander-velichko.com/secondhomework" target="_blank") URL проекта
+								img(src="images/portfolio-img/1b.jpg" alt="Alt")
+				figure.mix.col-md-3.col-sm-6.col-xs-12.portfolio__item.category_1
+					img(src="images/portfolio-img/2.jpg" alt="Alt")
+					figcaption.item__content
+						h3 Cервис генерации вотермарков
+						p
+						a.popup_content(href="#work_2") Посмотреть
+					.hidden
+						.podrt_descr#work_2
+							figure.modal-box-content
+								button.mfp-close(type="button" title="Закрыть (Esc)") ×
+								figcaption
+									h3 Cервис генерации вотермарков
+									p Разработать сервис генерации вотермарков, проект разробатывался в команде, я отвечал за js  и  сборку верстки js и php
+									p
+										a(href="http://alexander-velichko.com/hw3" target="_blank") URL проекта
+								img(src="images/portfolio-img/2b.jpg" alt="Alt")
+				figure.mix.col-md-3.col-sm-6.col-xs-12.portfolio__item.category_2
+					img(src="images/portfolio-img/3.jpg" alt="Alt")
+					figcaption.item__content
+						h3 Mototek
+						p Верстка магазина
+						a.popup_content(href="#work_3") Посмотреть
+					.hidden
+						.podrt_descr#work_3
+							figure.modal-box-content
+								button.mfp-close(type="button" title="Закрыть (Esc)") ×
+								figcaption
+									h3 Mototek.com.ua
+									p Верстка онлайн-магазина, и натяжка на joomla, легкий кодинг на php. Оптимизация быстродействия.
+									p
+										a(href="http://mototek.com.ua" target="_blank") URL проекта
+								img(src="images/portfolio-img/3b.jpg" alt="Alt")
+				figure.mix.col-md-3.col-sm-6.col-xs-12.portfolio__item.category_2
+					img(src="images/portfolio-img/4.jpg" alt="Alt")
+					figcaption.item__content
+						h3 3000+
+						p Адаптация шаблона
+						a.popup_content(href="#work_4") Посмотреть
+					.hidden
+						.podrt_descr#work_4
+							figure.modal-box-content
+								button.mfp-close(type="button" title="Закрыть (Esc)") ×
+								figcaption
+									h3 3000+
+									p Адаптация шаблона, перенос магазина c joomla1.5 на 2.5, правка багов в верстке, незначительный кодинг на php.
+									p
+										a(href="3000.net.ua" target="_blank") URL проекта
+								img(src="images/portfolio-img/4b.jpg" alt="Alt")
 section.section-contacts#mailMe
-    .container
-        h2.section__title  Связаться со мной
-    .container
-        .row
-            .col-md-12
-                form.main_form#form(novalidate)
-                   .control-group.name_form
-                        label.control-label(for="name") *Ваше имя:
-                        input#name(type="text" name="name" placeholder="Ваше имя" required data-validation-required-message="Вы не ввели имя" aria-invalid="false")
-                        span.help-block
-                    .control-group.mail_form
-                        label.control-label(for="email") *Ваш E-mail:
-                        input#email(type="email" name="email" placeholder="Ваш E-mail" required data-validation-required-message="Не корректно введен E-mail" aria-invalid="false")
-                        span.help-block
-                    .control-group
-                         label.control-label(for="message") *Ваше сообщение:
-                         textarea#message(name="message" placeholder="Ваше сообщение" required data-validation-required-message="Вы не ввели сообщение" aria-required="true" aria-invalid="true" )
-                         span.help-block
-                    input.submit(type="submit" name="submit_form" value="Отправить")
+	.container
+		h2.section__title  Связаться со мной
+	.container
+		.row
+			.col-md-12
+				form.main_form#form(novalidate)
+					.control-group.name_form
+						label.control-label(for="name") *Ваше имя:
+						input#name(type="text" name="name" placeholder="Ваше имя" required data-validation-required-message="Вы не ввели имя" aria-invalid="false")
+						span.help-block
+					.control-group.mail_form
+						label.control-label(for="email") *Ваш E-mail:
+						input#email(type="email" name="email" placeholder="Ваш E-mail" required data-validation-required-message="Не корректно введен E-mail" aria-invalid="false")
+						span.help-block
+					.control-group
+						label.control-label(for="message") *Ваше сообщение:
+						textarea#message(name="message" placeholder="Ваше сообщение" required data-validation-required-message="Вы не ввели сообщение" aria-required="true" aria-invalid="true" )
+						span.help-block
+					input.submit(type="submit" name="submit_form" value="Отправить")
 
 
 

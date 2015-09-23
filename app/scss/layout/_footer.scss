@@ -1,63 +1,117 @@
-.footer__note{
-  padding: 0;
-  margin: 0;
-}
-.links{
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  float: right;
-  @include clearfix;
-}
-.links__item{
-  display: inline-block;
-  margin-left: 15px;
-  a{
-    font-size: 17px;
-    color:#333;
-    transition: .3s;
-    &:hover{
-      color:#428bca;
-    }
-  }
-}
-.up{
-  bottom: 35px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
-  background-color: #111;
-  text-align: center;
-  line-height: 50;
-  position: fixed;
-  font-size: 34px;
-  border-radius: 50%;
-  opacity: 0;
- i{
-   position: absolute;
-   top: 2px;
-   bottom: 0;
-   left: 0;
-   right: 0;
-   color: #fff;
- }
-  &:hover {
-    transform: scale(1.07);
-    background-color: #666666;
-
-  }
-
-
+.footer__note {
+	padding: 0;
+	margin: 0;
 }
 
-@media(max-width:767px){
-  .header__intro-inner h2, .header__intro-inner p {
-
-    line-height: 45px;
-    font-size: 25px;
-  }
-  .header__intro .header__intro-inner{
-
-    padding: 115px 60px 50px 60px;
-  }
+.links {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	float: right;
+	@include clearfix;
 }
+
+.links__item {
+	display: inline-block;
+	margin-left: 15px;
+	a {
+		font-size: 17px;
+		color: #333;
+		transition: .3s;
+		&:hover {
+			color: #428bca;
+		}
+	}
+}
+
+.up {
+	bottom: 35px;
+	right: 20px;
+	width: 40px;
+	height: 40px;
+	background-color: #111;
+	text-align: center;
+	line-height: 50;
+	position: fixed;
+	font-size: 34px;
+	border-radius: 50%;
+	opacity: 0;
+	i {
+		position: absolute;
+		top: 2px;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		color: #fff;
+	}
+	&:hover {
+		transform: scale(1.07);
+		background-color: #666666;
+
+	}
+
+}
+
+.name_form {
+	transition: all 2s;
+
+}
+
+@media(max-width: 767px) {
+	.header__intro-inner h2, .header__intro-inner p {
+
+		line-height: 45px;
+		font-size: 25px;
+	}
+	.header__intro .header__intro-inner {
+
+		padding: 115px 60px 50px 60px;
+	}
+}
+
+@media(max-width: 799px) {
+	nav ul{
+		float: none;
+		text-align: center;
+	}
+	.menu {
+		margin-top: 0;
+		background-color: rgba(0, 0, 0, .7);
+
+		li {
+
+			float: none;
+			margin: 20px 0;
+			a{
+				font-size: 22px;
+			}
+		}
+	}
+
+	.section-about, section{
+		padding: 50px 0 87px;
+	}
+
+}
+@media(max-width: 420px) {
+	.section-about, section{
+		padding: 25px 0 40px;
+	}
+	.section__title{
+		font-size: 28px;
+	}
+
+}
+@media (max-width: 373px) {
+	.logo_container .header__person-name{
+		display: block;
+		margin-top: 8px;
+	}
+	.navbar-brand > img{
+		display: inline-block;
+		text-align: center;
+	}
+
+
+}
+
