@@ -4,19 +4,20 @@ var gulp = require('gulp'),
   cache = require('gulp-cache'),
   concat = require('gulp-concat'),
   uglify = require('gulp-uglify'),
-  sass = require('gulp-sass'),// Компиляция SCSS
+  sass = require('gulp-sass'),                      // Компиляция SCSS
   wiredep = require('wiredep').stream,
   minifyCSS = require('gulp-minify-css'),
   concatCss = require('gulp-concat-css'),
-  browserSync = require('browser-sync').create(),//лайв-релоад
-  reload = browserSync.reload,//упрощение обращения к релоаду
+  browserSync = require('browser-sync').create(),   //лайв-релоад
+  reload = browserSync.reload,                      //упрощение обращения к релоаду
   plumber = require('gulp-plumber'),
   notify = require("gulp-notify"),
   autoprefixer = require('gulp-autoprefixer'),
-  jade = require('gulp-jade'), // Компиляция Jade
-  svgstore = require('gulp-svgstore'); //Генерация svg иконок
+  jade = require('gulp-jade'),                      // Компиляция Jade
+  svgstore = require('gulp-svgstore');              //Генерация svg иконок
 
 //===================================LIVERELOAD===================================
+
 
 // Static server
 gulp.task('browser-sync', function () {
@@ -68,6 +69,7 @@ gulp.task('html', function () {
 
 //===================================CSS===================================
 
+
 //css
 
 gulp.task('css', function () {
@@ -104,19 +106,21 @@ gulp.task('sass', function () {
           errLogToConsole: true,						// показывать ошибки в консоле
           sync: true									// для обработки больших файлов
       }))
-        //.pipe(minifyCSS())
+      .pipe(rename({suffix: '.min', prefix : ''}))
       .pipe(autoprefixer({
-          browsers: ['last 2 versions'],
-          cascade: true
+          browsers: ['last 15 versions'],
+          cascade: false
       }))
+      .pipe(minifyCSS())
       .pipe(gulp.dest('app/css/'))					// Директория куда скидываются готовые файлы
-        // .pipe(notify("Scss Complete!"))				//Нотификация
+      // .pipe(notify("Scss Complete!"))				//Нотификация
       .pipe(reload({stream: true}));					// Сервер перезапускаем
 });
 
 //===================================END CSS===================================
 
 //===================================JS===================================
+
 
 //reload Js
 gulp.task('js', function () {
@@ -136,6 +140,7 @@ gulp.task('minify-js', function () {
 
 //===================================BOWER===================================
 
+
 //wiredep
 gulp.task('wiredep', function () {
     gulp.src('app/jade/index.jade')
@@ -149,12 +154,13 @@ gulp.task('wiredep', function () {
 
 //===================================END BOWER===================================
 
+
 //watcher
 gulp.task('watch', function () {
     //gulp.watch('app/css/styles.css', ['css']);
     gulp.watch('app/js/*.js', ['js']);
     //gulp.watch('app/*.html', ['html']);
-    gulp.watch('app/jade/*.jade', ['jade']);
+    gulp.watch('app/jade/**/*.jade', ['jade']);
     gulp.watch('app/scss/**/_*.scss', ['sass']);
     gulp.watch('bower.json', ['wiredep']);
 

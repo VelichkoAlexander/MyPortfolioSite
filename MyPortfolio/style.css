@@ -1,0 +1,11 @@
+/*
+Theme Name: MyPortfolio
+Author: Alexander Velichko
+Author URI: http://alexander-velichko.com
+Version: 1.0
+
+*/
+.portfolio__item img{
+	width: 100%;
+	height: 100%;
+}

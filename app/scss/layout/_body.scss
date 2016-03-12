@@ -97,7 +97,10 @@ section {
 
 .portfolio__item {
 	padding: 0;
-
+	img {
+		height: 100%;
+		width: 100%;
+	}
 	.item__content {
 		position: absolute;
 		top: 0;
@@ -115,14 +118,13 @@ section {
 		}
 		h3 {
 			color: #fff;
-			margin: 0;
+			margin: 0 5px;
 			text-transform: uppercase;
 			font-weight: 300;
 
 		}
 		a {
 			display: inline-block;
-			//width: 50%;
 			margin: 0 auto;
 			border: 1px solid #fff;
 			padding: 2px 10px;
@@ -135,6 +137,12 @@ section {
 				background-color: #fff;
 				transform: scale(1.07);
 			}
+
+		}
+		p {
+			margin: 0 5px;
+			color: darken(#ffffff, 30%);
+
 		}
 	}
 }
@@ -171,6 +179,21 @@ section {
 
 }
 
+.mail-button-wraper {
+	position: relative;
+	margin-top: 50px;
+	i {
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		z-index: -1;
+
+		transform: rotate(15deg) translateX(-50%);
+		transition: all .5s ease;
+
+	}
+}
+
 input[type=submit] {
 	font-weight: 600;
 	font-size: 13px;
@@ -185,16 +208,27 @@ input[type=submit] {
 	cursor: pointer;
 	padding: 15px 40px;
 	border-radius: 3px;
-	transition: all 200ms linear;
+	transition: all .5s linear;
 	margin: 25px auto;
+	z-index: 1;
 
 	&:hover {
-		transform: scale(1.07);
+		background-color: shade(#262626, 60%);
+		& + i {
+
+			top: -46%;
+			color: orangered;
+
+		}
+		&:active {
+			background-color: shade(#262626, 25%);
+		}
 	}
+
 }
 
 .help-block {
-	transition: .5s;
+	transition: all .5s ease;
 	font-size: 14px;
 	ul {
 		padding: 0;
@@ -203,6 +237,7 @@ input[type=submit] {
 
 		li {
 			color: red;
+
 		}
 	}
 }
@@ -231,7 +266,7 @@ input[type=submit] {
 }
 
 .mfp-close-btn-in .mfp-close {
-	color: #ffffff;
+	color: black;
 }
 
 .modal-box-content {
@@ -241,30 +276,74 @@ input[type=submit] {
 .stack-flow {
 	list-style: none;
 	padding: 0;
-	h2{
+	h2 {
 		margin: 0;
 		padding: 0;
 
 	}
-	p{
+	p {
 		margin: 0;
 		padding: 0;
 	}
-	.column{
+	.column {
 		min-height: 235px;
 	}
-	.icon{
+	.icon {
 		margin-right: 20px;
-		margin-left:20px;
+		margin-left: 20px;
 		width: 100px;
 		height: 100px;
 		display: inline-block;
 	}
-	.stack-flow__body{
+	.stack-flow__body {
 		display: inline-block;
 		width: 360px;
 
 	}
 }
 
+/*
+Blog
+*/
+.contant-blog-wrap {
+	background-color: #f3f3f3;
+}
+
+.post {
+	background-color: #fff;
+	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+	margin: 0 0 1.5em;
+	padding: 1.5rem;
+}
+
+.post-header {
+	border-bottom: 1px solid #999999;
+	margin-bottom: 25px;
+}
+
+.post-title {
+
+	font-size: rem(36px);
+	//margin: 0;
+	line-height: rem(50px);
+	font-weight: 300;
+	a {
+		color: #000;
+		&:hover {
+			text-decoration: none;
+		}
+
+	}
+}
+
+.post-meta {
+	color: #999999;
+	//font-weight: 200;
+}
+
+.post-content {
+	font-size: rem(19px);
+	line-height: rem(30px);
+
+}
 

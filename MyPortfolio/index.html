@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AV || Portfolio</title>
+  <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 8]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <!--[if lt IE 8]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <body>
+    <!--Header-->
+    <header id="home" data-speed="2" class="main_head">
+      <div class="container">
+        <div class="row">
+          <div class="head_nav">
+            <div class="logo_container col-md-6 col-sm-12 col-xs-12"><img src="images/header/avatar.png" alt="header__person-photo">
+              <h1 class="header__person-name">Александр Величко</h1>
+            </div>
+            <nav role="navigation" class="header__nav col-md-6 col-sm-12 col-xs-12 pull-leftnavbar">
+              <h2 class="outline">Навигация</h2>
+              <ul class="menu">
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#mailMe">Связаться</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="header__intro">
+        <div class="header__intro-inner">
+          <h2>Front-end разработчик из Украины.</h2>
+          <p>Готов к удалённой работе.</p>
+        </div>
+      </div><a href="#about" class="header__scroll"><i class="fa fa-angle-down fa-2x"></i></a>
+    </header>
+    <!--End header-->
+    <div id="loader">
+      <div id="loaderInner"><i class="fa fa-spinner fa-pulse fa-4x"></i></div>
+    </div>
+    <section id="about" class="section-about">
+      <div class="container">
+        <h2 class="section__title">Обо мне</h2>
+        <div class="about">
+          <p class="about__text"> Мое имя Александр, я front-end разработчик, живущий на Украине. Я специализируюсь в разработке сайтов на Joomla и Wordpress. Также имею скилы системного администратора.</p>
+          <p class="about__text">В работе я использую такие технологии и инструменты: git, js, gulp, jquery, bower, препроцессоры — jade для html и sass для css, есть начальные знания по Angular.js.</p>
+          <p class="about__text">Ближайшие цели: node.js, и углубленно Angular.</p>
+          <p class="about__text">Я большой поклонник спорта и здоровой жизни, сильно увлечен своей работой.</p>
+        </div>
+      </div>
+    </section>
+    <section id="portfolio" class="section-works">
+      <div class="container">
+        <h2 class="section__title"> Мои последнии работы</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="controls">
+            <ul>
+              <li data-filter="all" class="filter active">Все работы</li>
+              <li data-filter=".category_1" class="filter">Сервисы</li>
+              <li data-filter=".category_2" class="filter">Магазины</li>
+            </ul>
+          </div>
+          <div id="portfolio_show">
+            <figure class="mix col-md-3 col-sm-6 col-xs-12 portfolio__item category_2"><img src="images/portfolio-img/1.jpg" alt="Alt">
+              <figcaption class="item__content">
+                <h3>ЭпплShop</h3>
+                <p>Верстка онлайн магазина</p><a href="#work_1" class="popup_content">Посмотреть</a>
+              </figcaption>
+              <div class="hidden">
+                <div id="work_1" class="podrt_descr">
+                  <figure class="modal-box-content">
+                    <button type="button" title="Закрыть (Esc)" class="mfp-close">×
+                      <h3>ЭпплShop</h3>
+                      <p>Верстка онлайн-магазина</p>
+                      <p><a href="http://alexander-velichko.com/secondhomework" target="_blank">URL проекта</a></p>
+                    </button><img src="images/portfolio-img/1b.jpg" alt="Alt">
+                  </figure>
+                </div>
+              </div>
+            </figure>
+            <figure class="mix col-md-3 col-sm-6 col-xs-12 portfolio__item category_1"><img src="images/portfolio-img/2.jpg" alt="Alt">
+              <figcaption class="item__content">
+                <h3>Cервис генерации вотермарков</h3>
+                <p></p><a href="#work_2" class="popup_content">Посмотреть</a>
+              </figcaption>
+              <div class="hidden">
+                <div id="work_2" class="podrt_descr">
+                  <figure class="modal-box-content">
+                    <button type="button" title="Закрыть (Esc)" class="mfp-close">×</button>
+                    <figcaption>
+                      <h3>Cервис генерации вотермарков</h3>
+                      <p>Разработать сервис генерации вотермарков, проект разробатывался в команде, я отвечал за js  и  сборку верстки js и php</p>
+                      <p><a href="http://alexander-velichko.com/hw3" target="_blank">URL проекта</a></p>
+                    </figcaption><img src="images/portfolio-img/2b.jpg" alt="Alt">
+                  </figure>
+                </div>
+              </div>
+            </figure>
+            <figure class="mix col-md-3 col-sm-6 col-xs-12 portfolio__item category_2"><img src="images/portfolio-img/3.jpg" alt="Alt">
+              <figcaption class="item__content">
+                <h3>Mototek</h3>
+                <p>Верстка магазина</p><a href="#work_3" class="popup_content">Посмотреть</a>
+              </figcaption>
+              <div class="hidden">
+                <div id="work_3" class="podrt_descr">
+                  <figure class="modal-box-content">
+                    <button type="button" title="Закрыть (Esc)" class="mfp-close">×</button>
+                    <figcaption>
+                      <h3>Mototek.com.ua</h3>
+                      <p>Верстка онлайн-магазина, и натяжка на joomla, легкий кодинг на php. Оптимизация быстродействия.</p>
+                      <p><a href="http://mototek.com.ua" target="_blank">URL проекта</a></p>
+                    </figcaption><img src="images/portfolio-img/3b.jpg" alt="Alt">
+                  </figure>
+                </div>
+              </div>
+            </figure>
+            <figure class="mix col-md-3 col-sm-6 col-xs-12 portfolio__item category_2"><img src="images/portfolio-img/4.jpg" alt="Alt">
+              <figcaption class="item__content">
+                <h3>3000+</h3>
+                <p>Адаптация шаблона</p><a href="#work_4" class="popup_content">Посмотреть</a>
+              </figcaption>
+              <div class="hidden">
+                <div id="work_4" class="podrt_descr">
+                  <figure class="modal-box-content">
+                    <button type="button" title="Закрыть (Esc)" class="mfp-close">×</button>
+                    <figcaption>
+                      <h3>3000+</h3>
+                      <p>Адаптация шаблона, перенос магазина c joomla1.5 на 2.5, правка багов в верстке, незначительный кодинг на php.</p>
+                      <p><a href="3000.net.ua" target="_blank">URL проекта</a></p>
+                    </figcaption><img src="images/portfolio-img/4b.jpg" alt="Alt">
+                  </figure>
+                </div>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="mailMe" class="section-contacts">
+      <div class="container">
+        <h2 class="section__title"> Связаться со мной</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <form id="form" novalidate class="main_form">
+              <div class="control-group name_form">
+                <label for="name" class="control-label">*Ваше имя:</label>
+                <input id="name" type="text" name="name" placeholder="Ваше имя" required data-validation-required-message="Вы не ввели имя" aria-invalid="false"><span class="help-block"></span>
+              </div>
+              <div class="control-group mail_form">
+                <label for="email" class="control-label">*Ваш E-mail:</label>
+                <input id="email" type="email" name="email" placeholder="Ваш E-mail" required data-validation-required-message="Не корректно введен E-mail" aria-invalid="false"><span class="help-block"></span>
+              </div>
+              <div class="control-group">
+                <label for="message" class="control-label">*Ваше сообщение:</label>
+                <textarea id="message" name="message" placeholder="Ваше сообщение" required data-validation-required-message="Вы не ввели сообщение" aria-required="true" aria-invalid="true"></textarea><span class="help-block"></span>
+              </div>
+              <input type="submit" name="submit_form" value="Отправить" class="submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Footer-->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <p class="footer__note">© 2015  Александр Величко</p>
+          </div>
+          <div class="col-lg-6 col-sm-6 col-xs-12">
+            <ul class="links">
+              <li class="links__item"><a href="https://twitter.com/Al4peace"><i class="fa fa-twitter"></i></a></li>
+              <li class="links__item"><a href="https://www.facebook.com/alex.alforpeace"><i class="fa fa-facebook"></i></a></li>
+              <li class="links__item"><a href="https://github.com/alex4code"><i class="fa fa-github"></i></a></li>
+            </ul>
+          </div>
+        </div><a href="#home" class="up"><i class="fa fa-angle-double-up"></i><i class="fa fa-angle-double-up"></i></a>
+      </div>
+    </footer>
+    <!--End footer-->
+    
+    <!--Scripts-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery.min.js"><\/script>');</script>
+    <script src="js/libs/jquery.mixitup.min.js"></script>
+    <script src="js/libs/jqBootstrapValidation-1.3.7.min.js"></script>
+    <script src="js/libs/jquery.malihu.PageScroll2id.js"></script>
+    <script src="js/libs/waypoints.min.js"></script>
+    <script src="js/libs/animate-css.js"></script>
+    <script src="js/libs/jquery.magnific-popup.min.js"></script>
+    <script src="js/main.js"></script>
+    <!--End Scripts-->
+    
+  </body>
+</html>

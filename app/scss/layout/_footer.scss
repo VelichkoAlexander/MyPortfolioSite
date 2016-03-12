@@ -29,13 +29,14 @@
 	right: 20px;
 	width: 40px;
 	height: 40px;
-	background-color: #111;
+
 	text-align: center;
 	line-height: 50;
 	position: fixed;
 	font-size: 34px;
 	border-radius: 50%;
 	opacity: 0;
+	background-color: #666666;
 	i {
 		position: absolute;
 		top: 2px;
@@ -46,8 +47,11 @@
 	}
 	&:hover {
 		transform: scale(1.07);
-		background-color: #666666;
+		background-color: #111;
 
+	}
+	&:active{
+		background-color: tint(#111, 10%);
 	}
 
 }
@@ -57,61 +61,4 @@
 
 }
 
-@media(max-width: 767px) {
-	.header__intro-inner h2, .header__intro-inner p {
-
-		line-height: 45px;
-		font-size: 25px;
-	}
-	.header__intro .header__intro-inner {
-
-		padding: 115px 60px 50px 60px;
-	}
-}
-
-@media(max-width: 799px) {
-	nav ul{
-		float: none;
-		text-align: center;
-	}
-	.menu {
-		margin-top: 0;
-		background-color: rgba(0, 0, 0, .7);
-
-		li {
-
-			float: none;
-			margin: 20px 0;
-			a{
-				font-size: 22px;
-			}
-		}
-	}
-
-	.section-about, section{
-		padding: 50px 0 87px;
-	}
-
-}
-@media(max-width: 420px) {
-	.section-about, section{
-		padding: 25px 0 40px;
-	}
-	.section__title{
-		font-size: 28px;
-	}
-
-}
-@media (max-width: 373px) {
-	.logo_container .header__person-name{
-		display: block;
-		margin-top: 8px;
-	}
-	.navbar-brand > img{
-		display: inline-block;
-		text-align: center;
-	}
-
-
-}
 

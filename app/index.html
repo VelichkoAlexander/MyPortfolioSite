@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.min.css">
   <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/jquery.mb.YTPlayer.min.css">
@@ -38,6 +38,7 @@
               <li><a href="#about">Обо мне</a></li>
               <li><a href="#portfolio">Портфолио</a></li>
               <li><a href="#mailMe">Связаться</a></li>
+              <li><a href="/blog.html">Блог</a></li>
             </ul>
           </div>
           <!-- /.navbar-collapse-->
@@ -49,7 +50,10 @@
         <h2 class="animated fadeInDown">Front-end разработчик.</h2>
         <p class="animated fadeInUp">Готов к удалённой работе.</p>
       </div>
-    </div><a href="#about" class="header__scroll"><i class="fa fa-angle-down fa-2x"></i></a>
+    </div><a href="#about" class="header__scroll"><i>
+        <div class="mouse-icon">
+          <div class="wheel"></div>
+        </div></i></a>
     <div id="bgndVideo" data-property="{videoURL:'https://youtu.be/921Puvb0x6Q', containment:'header',	autoPlay:true,	mute:true, startAt:0, opacity:1, showControls : false}" class="player"></div>
     <!--End header-->
     
@@ -116,25 +120,7 @@
                 </div>
               </div>
             </figure>
-            <figure class="mix col-md-3 col-sm-6 col-xs-12 portfolio__item category_2"><img src="images/portfolio-img/3.jpg" alt="Alt">
-              <figcaption class="item__content">
-                <h3>Mototek</h3>
-                <p>Верстка магазина</p><a href="#work_3" class="popup_content">Посмотреть</a>
-              </figcaption>
-              <div class="hidden">
-                <div id="work_3" class="podrt_descr">
-                  <figure class="modal-box-content">
-                    <button type="button" title="Закрыть (Esc)" class="mfp-close">×</button>
-                    <figcaption>
-                      <h3>Mototek.com.ua</h3>
-                      <p>Верстка онлайн-магазина, и натяжка на joomla, легкий кодинг на php. Оптимизация быстродействия.</p>
-                      <p><a href="http://mototek.com.ua" target="_blank">URL проекта</a></p>
-                    </figcaption><img src="images/portfolio-img/3b.jpg" alt="Alt">
-                  </figure>
-                </div>
-              </div>
-            </figure>
-            <figure class="mix col-md-3 col-sm-6 col-xs-12 portfolio__item category_2"><img src="images/portfolio-img/4.jpg" alt="Alt">
+            <figure class="mix col-md-3 col-sm-6 col-xs-12 portfolio__item category_2"><img src="images/portfolio-img/4.jpg" alt="Alt" srcset=" ">
               <figcaption class="item__content">
                 <h3>3000+</h3>
                 <p>Адаптация шаблона</p><a href="#work_4" class="popup_content">Посмотреть</a>
@@ -176,7 +162,9 @@
                 <label for="message" class="control-label">*Ваше сообщение:</label>
                 <textarea id="message" name="message" placeholder="Ваше сообщение" required data-validation-required-message="Вы не ввели сообщение" aria-required="true" aria-invalid="true"></textarea><span class="help-block"></span>
               </div>
-              <input type="submit" name="submit_form" value="Отправить" class="submit">
+              <div class="mail-button-wraper">
+                <input type="submit" name="submit_form" value="Отправить" class="submit"><i class="fa fa-envelope-o fa-2x"></i>
+              </div>
             </form>
           </div>
         </div>
