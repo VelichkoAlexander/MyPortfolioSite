@@ -53,23 +53,7 @@ section.section-works#portfolio
 										a(href="http://alexander-velichko.com/hw3" target="_blank") URL проекта
 								img(src="images/portfolio-img/2b.jpg" alt="Alt")
 				figure.mix.col-md-3.col-sm-6.col-xs-12.portfolio__item.category_2
-					img(src="images/portfolio-img/3.jpg" alt="Alt")
-					figcaption.item__content
-						h3 Mototek
-						p Верстка магазина
-						a.popup_content(href="#work_3") Посмотреть
-					.hidden
-						.podrt_descr#work_3
-							figure.modal-box-content
-								button.mfp-close(type="button" title="Закрыть (Esc)") ×
-								figcaption
-									h3 Mototek.com.ua
-									p Верстка онлайн-магазина, и натяжка на joomla, легкий кодинг на php. Оптимизация быстродействия.
-									p
-										a(href="http://mototek.com.ua" target="_blank") URL проекта
-								img(src="images/portfolio-img/3b.jpg" alt="Alt")
-				figure.mix.col-md-3.col-sm-6.col-xs-12.portfolio__item.category_2
-					img(src="images/portfolio-img/4.jpg" alt="Alt")
+					img(src="images/portfolio-img/4.jpg" alt="Alt" srcset=" ")
 					figcaption.item__content
 						h3 3000+
 						p Адаптация шаблона
@@ -103,7 +87,9 @@ section.section-contacts#mailMe
 						label.control-label(for="message") *Ваше сообщение:
 						textarea#message(name="message" placeholder="Ваше сообщение" required data-validation-required-message="Вы не ввели сообщение" aria-required="true" aria-invalid="true" )
 						span.help-block
-					input.submit(type="submit" name="submit_form" value="Отправить")
+					.mail-button-wraper
+						input.submit(type="submit" name="submit_form" value="Отправить")
+						i.fa.fa-envelope-o.fa-2x
 
 
 
